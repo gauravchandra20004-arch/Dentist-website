@@ -64,6 +64,42 @@
         </div>
 
         <div class="navbar-actions">
+          <!-- Header Theme Switcher (5 Colors) -->
+          <div class="header-theme-picker" id="headerThemePicker">
+            <button type="button" class="btn-header-theme" id="btnHeaderTheme" onclick="toggleHeaderThemeDropdown(event)" aria-label="Change color theme" title="Customize Theme Color (5 Colors)">
+              <i class="fas fa-palette theme-palette-icon"></i>
+              <span class="active-theme-indicator" id="activeThemeDot" style="background-color: #1E50FF;"></span>
+            </button>
+            <div class="header-theme-dropdown" id="headerThemeDropdown" style="display: none;">
+              <div class="header-theme-dropdown-title">
+                <i class="fas fa-palette dropdown-title-icon"></i>
+                <span>Color Themes</span>
+              </div>
+              <div class="header-theme-options">
+                <button type="button" class="header-theme-option active" data-theme-btn="blue" onclick="selectTheme('blue', event)">
+                  <span class="theme-option-dot" style="background-color: #1E50FF;"><i class="fas fa-check theme-option-check"></i></span>
+                  <span class="theme-option-name">Royal Blue</span>
+                </button>
+                <button type="button" class="header-theme-option" data-theme-btn="teal" onclick="selectTheme('teal', event)">
+                  <span class="theme-option-dot" style="background-color: #0D9488;"><i class="fas fa-check theme-option-check" style="display:none;"></i></span>
+                  <span class="theme-option-name">Teal Mint</span>
+                </button>
+                <button type="button" class="header-theme-option" data-theme-btn="cyan" onclick="selectTheme('cyan', event)">
+                  <span class="theme-option-dot" style="background-color: #0284C7;"><i class="fas fa-check theme-option-check" style="display:none;"></i></span>
+                  <span class="theme-option-name">Ocean Cyan</span>
+                </button>
+                <button type="button" class="header-theme-option" data-theme-btn="purple" onclick="selectTheme('purple', event)">
+                  <span class="theme-option-dot" style="background-color: #7C3AED;"><i class="fas fa-check theme-option-check" style="display:none;"></i></span>
+                  <span class="theme-option-name">Deep Purple</span>
+                </button>
+                <button type="button" class="header-theme-option" data-theme-btn="rose" onclick="selectTheme('rose', event)">
+                  <span class="theme-option-dot" style="background-color: #E11D48;"><i class="fas fa-check theme-option-check" style="display:none;"></i></span>
+                  <span class="theme-option-name">Coral Rose</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
           <a href="https://wa.me/919122909121?text=Namaste%20Dr.%20Amit%20Kumar%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment." target="_blank" class="btn-nav-book desktop-only-btn">Book Now</a>
           <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Toggle navigation menu">
             <span></span>
@@ -1542,87 +1578,66 @@
     </div>
   </div>
 
-  <!-- Floating Color Switcher (5 Curated Themes) -->
-  <div class="color-switcher-wrapper" id="colorSwitcher">
-    <button type="button" class="color-switcher-toggle" onclick="toggleColorSwitcher()" aria-label="Toggle Color Theme Switcher" title="Customize Color Theme (5 Colors)">
-      <i class="fas fa-palette"></i>
-    </button>
-
-    <div class="color-switcher-panel">
-      <div class="panel-header">
-        <div class="panel-title">
-          <i class="fas fa-palette title-icon"></i>
-          <span>Theme Colors</span>
-        </div>
-        <button type="button" class="panel-close-btn" onclick="toggleColorSwitcher()" aria-label="Close">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-
-      <p class="panel-sub">Select 1 of 5 color themes:</p>
-
-      <div class="theme-swatches-grid">
-        <button type="button" class="theme-swatch-item active" data-theme="blue" onclick="applyTheme('blue')">
-          <span class="swatch-circle" style="background-color: #1E50FF;">
-            <i class="fas fa-check swatch-check"></i>
-          </span>
-          <span class="swatch-name">Royal Blue</span>
-        </button>
-
-        <button type="button" class="theme-swatch-item" data-theme="teal" onclick="applyTheme('teal')">
-          <span class="swatch-circle" style="background-color: #0D9488;">
-            <i class="fas fa-check swatch-check" style="display: none;"></i>
-          </span>
-          <span class="swatch-name">Teal Mint</span>
-        </button>
-
-        <button type="button" class="theme-swatch-item" data-theme="cyan" onclick="applyTheme('cyan')">
-          <span class="swatch-circle" style="background-color: #0284C7;">
-            <i class="fas fa-check swatch-check" style="display: none;"></i>
-          </span>
-          <span class="swatch-name">Ocean Cyan</span>
-        </button>
-
-        <button type="button" class="theme-swatch-item" data-theme="purple" onclick="applyTheme('purple')">
-          <span class="swatch-circle" style="background-color: #7C3AED;">
-            <i class="fas fa-check swatch-check" style="display: none;"></i>
-          </span>
-          <span class="swatch-name">Deep Purple</span>
-        </button>
-
-        <button type="button" class="theme-swatch-item" data-theme="rose" onclick="applyTheme('rose')">
-          <span class="swatch-circle" style="background-color: #E11D48;">
-            <i class="fas fa-check swatch-check" style="display: none;"></i>
-          </span>
-          <span class="swatch-name">Coral Rose</span>
-        </button>
-      </div>
-    </div>
-  </div>
-
   <!-- Interactive Navigation & Form Scripts -->
   <script>
-    function toggleColorSwitcher() {
-      const switcher = document.getElementById('colorSwitcher');
-      if (switcher) switcher.classList.toggle('open');
+    const THEME_COLORS = {
+      blue: '#1E50FF',
+      teal: '#0D9488',
+      cyan: '#0284C7',
+      purple: '#7C3AED',
+      rose: '#E11D48'
+    };
+
+    function toggleHeaderThemeDropdown(event) {
+      if (event) event.stopPropagation();
+      const dropdown = document.getElementById('headerThemeDropdown');
+      const btn = document.getElementById('btnHeaderTheme');
+      if (dropdown) {
+        const isHidden = dropdown.style.display === 'none' || dropdown.style.display === '';
+        dropdown.style.display = isHidden ? 'block' : 'none';
+        if (btn) btn.classList.toggle('active', isHidden);
+      }
     }
 
-    function applyTheme(themeId) {
+    function selectTheme(themeId, event) {
+      if (event) event.stopPropagation();
       document.documentElement.setAttribute('data-theme', themeId);
       localStorage.setItem('nirmala_theme', themeId);
 
-      document.querySelectorAll('.theme-swatch-item').forEach(item => {
-        const isCurrent = item.getAttribute('data-theme') === themeId;
+      const dot = document.getElementById('activeThemeDot');
+      if (dot && THEME_COLORS[themeId]) {
+        dot.style.backgroundColor = THEME_COLORS[themeId];
+      }
+
+      document.querySelectorAll('.header-theme-option').forEach(item => {
+        const isCurrent = item.getAttribute('data-theme-btn') === themeId;
         item.classList.toggle('active', isCurrent);
-        const check = item.querySelector('.swatch-check');
+        const check = item.querySelector('.theme-option-check');
         if (check) check.style.display = isCurrent ? 'inline-block' : 'none';
       });
+
+      // Close dropdown after selection
+      const dropdown = document.getElementById('headerThemeDropdown');
+      const btn = document.getElementById('btnHeaderTheme');
+      if (dropdown) dropdown.style.display = 'none';
+      if (btn) btn.classList.remove('active');
     }
+
+    // Close header theme dropdown on outside click
+    document.addEventListener('click', (e) => {
+      const picker = document.getElementById('headerThemePicker');
+      const dropdown = document.getElementById('headerThemeDropdown');
+      const btn = document.getElementById('btnHeaderTheme');
+      if (picker && dropdown && !picker.contains(e.target)) {
+        dropdown.style.display = 'none';
+        if (btn) btn.classList.remove('active');
+      }
+    });
 
     // Initialize saved theme on load
     (function initSavedTheme() {
       const saved = localStorage.getItem('nirmala_theme') || 'blue';
-      applyTheme(saved);
+      selectTheme(saved);
     })();
     function navigateTo(pageId) {
       document.querySelectorAll('.page-view').forEach(view => view.classList.remove('active'));
