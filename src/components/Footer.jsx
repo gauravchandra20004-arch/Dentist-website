@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaTooth, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa'
+import { 
+  FaTooth, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, 
+  FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp, FaGithub 
+} from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -21,9 +24,9 @@ const Footer = () => {
             </p>
             <div className="footer-social">
               <a href="https://wa.me/919122909121" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
-              <a href="#" aria-label="Facebook"><FaFacebookF /></a>
               <a href="https://www.instagram.com/gauravchandra20004/" target="_blank" rel="noopener noreferrer" aria-label="Gaurav Chandra Instagram"><FaInstagram /></a>
-              <a href="#" aria-label="YouTube"><FaYoutube /></a>
+              <a href="https://github.com/gauravchandra20004-arch/Dentist-website" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository"><FaGithub /></a>
+              <a href="mailto:nirmaladentalmotihari@gmail.com" aria-label="Email Us"><FaEnvelope /></a>
             </div>
           </div>
 
@@ -73,6 +76,17 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} Nirmala Dental Care. Led by Dr. Amit Kumar (BDS). All Rights Reserved.</p>
+          <div className="footer-credits">
+            <span>Designed & Developed by <a href="https://www.instagram.com/gauravchandra20004/" target="_blank" rel="noopener noreferrer" className="dev-link">Gaurav Chandra</a></span>
+            <span className="credit-sep">•</span>
+            <a href="https://github.com/gauravchandra20004-arch/Dentist-website" target="_blank" rel="noopener noreferrer" className="dev-badge-link">
+              <FaGithub /> GitHub Project
+            </a>
+            <span className="credit-sep">•</span>
+            <a href="/diwali-card.html" target="_blank" rel="noopener noreferrer" className="dev-diwali-badge">
+              🪔 Diwali Special Wishes
+            </a>
+          </div>
         </div>
       </div>
     </footer>

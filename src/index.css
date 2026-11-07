@@ -1572,6 +1572,73 @@ ul {
   font-size: 0.86rem;
 }
 
+.footer-credits {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.84rem;
+  color: #94A3B8;
+}
+
+.dev-link {
+  color: #38BDF8;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.dev-link:hover {
+  color: #60A5FA;
+  text-decoration: underline;
+}
+
+.dev-badge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #F1F5F9;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.dev-badge-link:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #FFFFFF;
+}
+
+.dev-diwali-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #FEF08A;
+  background: rgba(245, 158, 11, 0.15);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.dev-diwali-badge:hover {
+  background: rgba(245, 158, 11, 0.3);
+  color: #FFFFFF;
+}
+
+.credit-sep {
+  color: rgba(255, 255, 255, 0.2);
+}
+
 /* ==========================================================================
    VIDEO TOUR MODAL
    ========================================================================== */
