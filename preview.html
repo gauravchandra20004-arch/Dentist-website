@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nirmala Dental Care | Dr. Amit Kumar (BDS) Motihari</title>
+  <link rel="icon" type="image/svg+xml" href="public/tooth.svg" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="src/index.css">
+  <style>
+    .page-view {
+      display: none;
+      animation: fadeIn 0.4s ease forwards;
+    }
+    .page-view.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .about-hero-preview {
+      background-image: url('public/images/clinic.jpg') !important;
+    }
+    .services-hero-preview {
+      background-image: url('public/images/hero.jpg') !important;
+    }
+    .gallery-hero-preview {
+      background-image: url('public/images/reception.jpg') !important;
+    }
+    .contact-hero-preview {
+      background-image: url('public/images/doctor.jpg') !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header (Top Bar + Crisp White Navbar) -->
+  <header class="site-header">
+    <!-- Top Royal Blue Info Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-container">
+        <div class="top-bar-left">
+          <a href="tel:+919122909121" class="top-bar-item">
+            <i class="fas fa-phone-alt top-bar-icon"></i>
+            <span>+91 91229 09121</span>
+          </a>
+          <span class="top-bar-divider">â€¢</span>
+          <a href="mailto:nirmaladentalmotihari@gmail.com" class="top-bar-item">
+            <i class="fas fa-envelope top-bar-icon"></i>
+            <span>nirmaladentalmotihari@gmail.com</span>
+          </a>
+          <span class="top-bar-divider">â€¢</span>
+          <div class="top-bar-item top-bar-address">
+            <i class="fas fa-map-marker-alt top-bar-icon"></i>
+            <span>Hospital Road, Motihari, Bihar - 845401</span>
+          </div>
+        </div>
+
+        <div class="top-bar-right">
+          <div class="top-bar-socials">
+            <a href="https://wa.me/919122909121" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main White Navbar -->
+    <nav class="navbar scrolled">
+      <div class="container navbar-container">
+        <a href="javascript:void(0)" onclick="navigateTo('home')" class="navbar-logo">
+          <div class="logo-icon-box"><i class="fas fa-tooth"></i></div>
+          <div class="logo-text">
+            <h3>Nirmala Dental</h3>
+            <p>Speciality Center</p>
+          </div>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+          <a href="javascript:void(0)" onclick="navigateTo('home')" class="nav-item active" data-nav="home">Home</a>
+          <a href="javascript:void(0)" onclick="navigateTo('about')" class="nav-item" data-nav="about">About</a>
+          <a href="javascript:void(0)" onclick="navigateTo('services')" class="nav-item" data-nav="services">Services</a>
+          <a href="javascript:void(0)" onclick="navigateTo('gallery')" class="nav-item" data-nav="gallery">Gallery</a>
+          <a href="javascript:void(0)" onclick="navigateTo('contact')" class="nav-item" data-nav="contact">Contact</a>
+          <a href="https://wa.me/919122909121?text=Namaste%20Dr.%20Amit%20Kumar%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment." target="_blank" class="btn-nav-book mobile-only-btn">Book Now</a>
+        </div>
+
+        <div class="navbar-actions">
+          <a href="https://wa.me/919122909121?text=Namaste%20Dr.%20Amit%20Kumar%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment." target="_blank" class="btn-nav-book desktop-only-btn">Book Now</a>
+          <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== HOME VIEW ==================== -->
+  <div id="page-home" class="page-view active">
+    
+    <!-- HERO SECTION (MATCHING REFERENCE EXACTLY) -->
+    <section class="hero-reference">
+      <div class="container hero-reference-container">
+        <div class="hero-reference-grid">
+          
+          <!-- Left Column -->
+          <div class="hero-reference-content">
+            <div class="ref-badge">
+              <span class="ref-badge-icon">ðŸ©º</span>
+              <span>Top-Notch Dental Care, Just for You</span>
+            </div>
+
+            <h1 class="ref-hero-headline">
+              Your <span class="ref-text-dark">Best Dental</span> <br />
+              <span class="ref-text-blue">Experience Awaits</span>
+            </h1>
+
+            <p class="ref-hero-subtitle">
+              Welcome to <strong>Nirmala Dental Care</strong>, Hospital Road, Motihari. Led by senior dental surgeon <strong>Dr. Amit Kumar (BDS)</strong> with 13+ years of clinical mastery in painless Rotary RCT, Laser Dentistry, and Invisible Clear Braces.
+            </p>
+
+            <div class="ref-hero-cta-group">
+              <a href="javascript:void(0)" onclick="navigateTo('services')" class="btn-ref-primary">
+                <span>Explore Our Services</span>
+                <i class="fas fa-arrow-right btn-icon"></i>
+              </a>
+
+              <button type="button" class="btn-ref-video" onclick="openModal()">
+                <span class="play-icon-circle"><i class="fas fa-play"></i></span>
+                <span class="btn-video-text">Watch Video</span>
+              </button>
+            </div>
+
+            <div class="ref-hero-trust-bar">
+              <div class="ref-trust-item">
+                <i class="fas fa-check-circle trust-check"></i>
+                <span>13+ Years Trusted Care</span>
+              </div>
+              <div class="ref-trust-item">
+                <i class="fas fa-check-circle trust-check"></i>
+                <span>5,000+ Happy Patients</span>
+              </div>
+              <div class="ref-trust-item">
+                <i class="fas fa-star trust-star"></i>
+                <span>4.9/5 Verified Rating</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Doctor Visual Showcase -->
+          <div class="hero-reference-visual">
+            <div class="doctor-visual-container">
+              <!-- Organic Royal Blue Shape -->
+              <div class="doctor-blue-backdrop"></div>
+              
+              <span class="sparkle sparkle-1">âœ¦</span>
+              <span class="sparkle sparkle-2">âœ¦</span>
+
+              <div class="doctor-image-wrapper">
+                <img src="public/images/doctor.jpg" alt="Dr. Amit Kumar BDS Dental Surgeon Motihari" class="doctor-main-img" />
+                <div class="doctor-badge-overlay">
+                  <div class="doctor-overlay-name">
+                    <span>Dr. Amit Kumar</span>
+                    <span class="verified-badge-pill" title="Verified Practitioner"><i class="fas fa-check"></i></span>
+                  </div>
+                  <div class="doctor-overlay-spec">BDS Dental Surgeon</div>
+                  <div class="doctor-overlay-loc">Hospital Rd, Motihari</div>
+                </div>
+              </div>
+
+              <div class="ref-floating-card card-top-left">
+                <div class="floating-card-icon-box gold"><i class="fas fa-award"></i></div>
+                <div class="floating-card-text">
+                  <strong>13+ Years</strong>
+                  <p>Clinical Mastery</p>
+                </div>
+              </div>
+
+              <div class="ref-floating-card card-bottom-right">
+                <div class="floating-card-icon-box blue"><i class="fas fa-tooth"></i></div>
+                <div class="floating-card-text">
+                  <strong>5,000+ Smiles</strong>
+                  <p>Dr. Amit Kumar (BDS)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FLOATING APPOINTMENT BOOKING BAR -->
+      <div class="container appointment-bar-wrapper">
+        <div class="appointment-bar-card">
+          <form onsubmit="handleAppointmentSubmit(event)" class="appointment-bar-form">
+            <div class="appointment-field">
+              <label for="p-name">Name</label>
+              <div class="field-input-box">
+                <span class="field-icon">ðŸ‘¤</span>
+                <input type="text" id="p-name" placeholder="John Doe" required />
+              </div>
+            </div>
+
+            <div class="appointment-field">
+              <label for="p-phone">Phone Number</label>
+              <div class="field-input-box">
+                <span class="field-icon">ðŸ“ž</span>
+                <input type="tel" id="p-phone" placeholder="+91 91229 09121" required />
+              </div>
+            </div>
+
+            <div class="appointment-field">
+              <label for="p-date">Preferred Date</label>
+              <div class="field-input-box">
+                <span class="field-icon">ðŸ“…</span>
+                <input type="date" id="p-date" />
+              </div>
+            </div>
+
+            <div class="appointment-field">
+              <label for="p-time">Preferred Time</label>
+              <div class="field-input-box">
+                <span class="field-icon">â°</span>
+                <select id="p-time">
+                  <option value="10:00 AM">10:00 AM - Morning</option>
+                  <option value="11:30 AM">11:30 AM - Morning</option>
+                  <option value="01:00 PM">01:00 PM - Afternoon</option>
+                  <option value="04:00 PM">04:00 PM - Evening</option>
+                  <option value="06:30 PM">06:30 PM - Evening</option>
+                  <option value="08:00 PM">08:00 PM - Evening</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="appointment-action">
+              <button type="submit" class="btn-appointment-submit">
+                <span>Book an Appointment</span>
+              </button>
+            </div>
+          </form>
+
+          <div id="bookingToast" class="booking-success-toast" style="display: none;">
+            <i class="fas fa-check"></i> Redirecting to WhatsApp to confirm your slot with Dr. Amit Kumar...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="section ref-about-section">
+      <div class="container">
+        <div class="ref-about-grid">
+          
+          <div class="ref-about-visual-box" id="aboutCollageBox">
+            <div class="ref-about-collage">
+              <div class="collage-card card-primary-img" id="aboutImgLeft">
+                <img src="public/images/xray.jpg" alt="Dr. Amit Kumar Digital X-Ray Diagnostics" />
+              </div>
+              <div class="collage-card card-secondary-img" id="aboutImgRight">
+                <img src="public/images/clinic.jpg" alt="Modern Treatment Operatory" />
+              </div>
+            </div>
+
+            <a href="tel:+919122909121" class="rotating-contact-badge" title="Call +91 91229 09121">
+              <div class="badge-inner-circle">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <svg class="badge-text-svg" viewBox="0 0 100 100">
+                <path id="circlePathRef" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                <text>
+                  <textPath href="#circlePathRef" startOffset="0%">
+                    • CONTACT US • 4.9★ GOOGLE RATED •
+                  </textPath>
+                </text>
+              </svg>
+            </a>
+
+            <span class="ref-sparkle sparkle-blue-1">✦</span>
+            <span class="ref-sparkle sparkle-blue-2">✦</span>
+          </div>
+
+          <div class="ref-about-content">
+            <span class="ref-kicker">ABOUT US</span>
+            <h2 class="ref-section-headline">
+              13 Years of Expertise <br />
+              <span class="text-highlight">in Dental Care</span>
+            </h2>
+
+            <p class="ref-about-text">
+              Nirmala Dental Care is Motihariâ€™s foremost center for painless, precision oral care. Located conveniently on Hospital Road (in front of Town Police Station), our clinic is equipped with cutting-edge German rotary endodontics, digital intraoral imaging, and class-B hospital autoclave sterilization.
+            </p>
+
+            <p class="ref-about-text secondary-text">
+              Led by renowned dental surgeon <strong>Dr. Amit Kumar (BDS)</strong>, we ensure that every dental procedureâ€”from a simple cleaning to complex root canal treatments and dental implantsâ€”is executed with 100% comfort, gentleness, and lasting results.
+            </p>
+
+            <div class="ref-check-list">
+              <div class="ref-check-item">
+                <div class="check-bullet"><i class="fas fa-check-circle"></i></div>
+                <div class="check-content">
+                  <strong>Painless Dental Services You Can Trust</strong>
+                  <p>Computerized rotary tools and gentle local anesthesia for anxiety-free visits.</p>
+                </div>
+              </div>
+
+              <div class="ref-check-item">
+                <div class="check-bullet"><i class="fas fa-check-circle"></i></div>
+                <div class="check-content">
+                  <strong>Award-Winning Expertise in Rotary RCT & Implants</strong>
+                  <p>Over a decade of trusted surgery restoring chewing power and natural aesthetics.</p>
+                </div>
+              </div>
+
+              <div class="ref-check-item">
+                <div class="check-bullet"><i class="fas fa-check-circle"></i></div>
+                <div class="check-content">
+                  <strong>Dedicated Care Behind Every Confident Smile</strong>
+                  <p>Personalized post-treatment follow-up and honest, transparent pricing in Motihari.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ref-about-actions">
+              <a href="javascript:void(0)" onclick="navigateTo('about')" class="btn-ref-primary">
+                <span>Learn More</span>
+                <i class="fas fa-arrow-right btn-icon"></i>
+              </a>
+
+              <a href="tel:+919122909121" class="btn-ref-call">
+                <i class="fas fa-phone-alt"></i>
+                <span>+91 91229 09121</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ROYAL BLUE MARQUEE 1 -->
+    <div class="marquee-ribbon">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> General Dentistry</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Teeth Whitening</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Dental Implant</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Root Canal (RCT)</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Clear Braces</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Laser Dentistry</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Pediatric Care</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Dental Sealants</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> General Dentistry</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Teeth Whitening</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Dental Implant</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Root Canal (RCT)</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Clear Braces</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Laser Dentistry</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Pediatric Care</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Dental Sealants</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUR SERVICES SECTION -->
+    <section class="section ref-services-section">
+      <div class="container">
+        <div class="ref-services-header">
+          <div class="header-left">
+            <span class="ref-kicker">OUR SERVICES</span>
+            <h2 class="ref-section-headline">
+              A Wide Range of Services <br />
+              <span class="text-highlight">for Your Best Smile</span>
+            </h2>
+          </div>
+          <div class="header-right">
+            <a href="javascript:void(0)" onclick="navigateTo('services')" class="btn-ref-primary">
+              <span>Explore All Services</span>
+              <i class="fas fa-arrow-right btn-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="ref-services-grid">
+          <!-- Card 1 -->
+          <div class="ref-service-card">
+            <div class="card-image-box">
+              <img src="public/images/clinic.jpg" alt="General Dentistry" />
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-tooth"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">General Dentistry</h3>
+              <p class="card-desc">Complete routine oral check-ups, ultrasonic scaling, cavity fillings, and preventive care for a lasting confident smile.</p>
+              <a href="javascript:void(0)" onclick="navigateTo('services')" class="card-learn-more">
+                <span>Learn more</span>
+                <i class="fas fa-arrow-right arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="ref-service-card">
+            <div class="card-image-box">
+              <img src="public/images/implants.jpg" alt="Dental Implant" />
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-syringe"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Dental Implant</h3>
+              <p class="card-desc">Lifelong permanent tooth replacement using medical-grade titanium implants that look, chew, and feel like real teeth.</p>
+              <a href="javascript:void(0)" onclick="navigateTo('services')" class="card-learn-more">
+                <span>Learn more</span>
+                <i class="fas fa-arrow-right arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="ref-service-card">
+            <div class="card-image-box">
+              <img src="public/images/whitening.jpg" alt="Teeth Whitening" />
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-smile"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Teeth Whitening</h3>
+              <p class="card-desc">Laser-activated whitening treatment brightening your natural teeth by multiple shades safely and comfortably.</p>
+              <a href="javascript:void(0)" onclick="navigateTo('services')" class="card-learn-more">
+                <span>Learn more</span>
+                <i class="fas fa-arrow-right arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="ref-service-card">
+            <div class="card-image-box">
+              <img src="public/images/root-canal.jpg" alt="Root Canal Treatment" />
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-tooth"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Root Canal (RCT)</h3>
+              <p class="card-desc">Single-sitting painless Rotary Endodontics to relieve severe tooth pain and preserve your natural tooth structure.</p>
+              <a href="javascript:void(0)" onclick="navigateTo('services')" class="card-learn-more">
+                <span>Learn more</span>
+                <i class="fas fa-arrow-right arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="ref-service-card">
+            <div class="card-image-box">
+              <img src="public/images/braces.jpg" alt="Clear Aligners" />
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-teeth-open"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Clear Braces</h3>
+              <p class="card-desc">Discreet invisible aligners and aesthetic ceramic braces for smooth teeth alignment without unsightly metal wires.</p>
+              <a href="javascript:void(0)" onclick="navigateTo('services')" class="card-learn-more">
+                <span>Learn more</span>
+                <i class="fas fa-arrow-right arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="ref-service-card">
+            <div class="card-image-box">
+              <img src="public/images/laser.jpg" alt="Laser Dentistry" />
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-bolt"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Laser Dentistry</h3>
+              <p class="card-desc">Minimally invasive diode laser treatments for bleeding gums, precision gum contouring, and rapid healing.</p>
+              <a href="javascript:void(0)" onclick="navigateTo('services')" class="card-learn-more">
+                <span>Learn more</span>
+                <i class="fas fa-arrow-right arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROYAL BLUE MARQUEE 2 -->
+    <div class="marquee-ribbon marquee-reverse">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> General Dentistry</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Teeth Whitening</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Dental Implant</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Root Canal (RCT)</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Clear Braces</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Laser Dentistry</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Pediatric Care</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> General Dentistry</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Teeth Whitening</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Dental Implant</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Root Canal (RCT)</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Clear Braces</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Laser Dentistry</span>
+          <span class="marquee-item"><span class="marquee-tooth">ðŸ¦·</span> Pediatric Care</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section ref-why-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="ref-kicker">WHY CHOOSE US</span>
+          <h2 class="ref-section-headline">
+            Why Patients in Motihari <br />
+            <span class="text-highlight">Trust Nirmala Dental</span>
+          </h2>
+          <p class="section-desc">Your comfort, safety, and oral health are our highest priority.</p>
+        </div>
+
+        <div class="why-cards-grid">
+          <div class="why-feature-card">
+            <div class="why-feature-icon"><i class="fas fa-user-md"></i></div>
+            <h4>13+ Years Experience</h4>
+            <p>Led by Dr. Amit Kumar (BDS) with 13+ years of trusted clinical excellence.</p>
+          </div>
+          <div class="why-feature-card">
+            <div class="why-feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <h4>100% Sterile Protocol</h4>
+            <p>Hospital-grade class-B autoclaves for zero infection risk and complete hygiene.</p>
+          </div>
+          <div class="why-feature-card">
+            <div class="why-feature-icon"><i class="fas fa-clock"></i></div>
+            <h4>Monâ€“Sat: 10AM â€“ 9PM</h4>
+            <p>Convenient morning to evening consultation slots on Hospital Road.</p>
+          </div>
+          <div class="why-feature-card">
+            <div class="why-feature-icon"><i class="fas fa-heart"></i></div>
+            <h4>100% Gentle & Painless</h4>
+            <p>Computerized rotary tools and digital anesthesia for pain-free procedures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section ref-testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="ref-kicker">PATIENT REVIEWS</span>
+          <h2 class="ref-section-headline">
+            Words From Our <span className="text-highlight">Happy Patients</span>
+          </h2>
+          <p class="section-desc">Real stories from patients treated with care by Dr. Amit Kumar.</p>
+        </div>
+
+        <div class="testimonials-cards-grid">
+          <div class="ref-testimonial-card">
+            <div class="testimonial-rating-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"Dr. Amit Kumar is the most gentle dentist I have ever met. My root canal was completely painless! Nirmala Dental is by far the best clinic in Champaran."</p>
+            <div class="testimonial-author-box">
+              <div class="author-avatar">R</div>
+              <div class="author-info">
+                <h4>Rahul Kumar</h4>
+                <p>Root Canal Treatment â€¢ Motihari</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ref-testimonial-card">
+            <div class="testimonial-rating-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"Very hygienic and modern clinic right in front of Town Police Station. Got clear aligners here and my smile has completely transformed!"</p>
+            <div class="testimonial-author-box">
+              <div class="author-avatar">P</div>
+              <div class="author-info">
+                <h4>Priya Singh</h4>
+                <p>Invisible Aligners â€¢ Chakia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ref-testimonial-card">
+            <div class="testimonial-rating-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-quote">"Got dental implants done for my mother. She can eat comfortably now without any trouble. Very honest diagnosis and transparent pricing."</p>
+            <div class="testimonial-author-box">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <h4>Amit Sharma</h4>
+                <p>Dental Implants â€¢ Raxaul</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="ref-cta-banner">
+      <div class="container">
+        <div class="cta-banner-card">
+          <div class="cta-text">
+            <h2>Ready to Smile with Confidence?</h2>
+            <p>Book your consultation today with Dr. Amit Kumar (BDS). OPD open Monday to Saturday, 10:00 AM â€“ 9:00 PM.</p>
+          </div>
+          <div class="cta-buttons">
+            <a href="https://wa.me/919122909121?text=Namaste%20Dr.%20Amit%20Kumar%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="btn-cta-whatsapp">
+              <i class="fab fa-whatsapp"></i> Book via WhatsApp
+            </a>
+            <a href="tel:+919122909121" class="btn-cta-call">
+              <i class="fas fa-phone-alt"></i> +91 91229 09121
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== ABOUT VIEW ==================== -->
+  <div id="page-about" class="page-view">
+    <div class="page-header about-hero about-hero-preview">
+      <div class="container">
+        <div class="page-header-badge">
+          <span class="badge-dot"></span>
+          <span>13+ Years of Clinical Excellence â€¢ Motihari</span>
+        </div>
+        <h1>About Nirmala Dental Care</h1>
+        <p>Dedicated to gentle, precise, and advanced dental healthcare in Champaran. Led by Dr. Amit Kumar (BDS) with over a decade of trusted surgical mastery.</p>
+        <div class="breadcrumb">
+          <a href="javascript:void(0)" onclick="navigateTo('home')">Home</a>
+          <span>/</span>
+          <span>About Us</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image">
+            <div class="image-box">
+              <img src="public/images/clinic.jpg" alt="Clinic Interior" />
+            </div>
+            <div class="experience-badge">
+              <h3>13+</h3>
+              <p>Years of Trust</p>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="section-subtitle">Our Story</span>
+            <h2 class="section-title">
+              Motihari's Most Trusted <span>Dental Clinic</span>
+            </h2>
+            <p class="ref-about-text">
+              Nirmala Dental Care has been a cornerstone of dental healthcare in Motihari, Bihar for over 13 years. Situated on Hospital Road, in front of Town Police Station, our clinic has served thousands of patients with dedication and compassion.
+            </p>
+            <p class="ref-about-text">
+              Our mission is to provide world-class dental care accessible to everyone in East Champaran district. We believe that a healthy smile transforms lives, and we combine the latest rotary tools with compassionate care.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                <span>Latest Equipment</span>
+              </div>
+              <div class="about-feature">
+                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                <span>Sterilized Environment</span>
+              </div>
+              <div class="about-feature">
+                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                <span>Expert Team</span>
+              </div>
+              <div class="about-feature">
+                <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                <span>Patient Comfort First</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Doctor Details -->
+    <section class="section doctor-section">
+      <div class="container">
+        <div class="doctor-card">
+          <div class="doctor-image">
+            <img src="public/images/doctor.jpg" alt="Dr. Amit Kumar BDS" />
+          </div>
+          <div class="doctor-info">
+            <h2>Dr. Amit Kumar</h2>
+            <p class="degree">BDS (Bachelor of Dental Surgery)</p>
+            <p class="speciality">Senior Dental Surgeon & Specialist</p>
+            <p class="bio">
+              With over 13 years of clinical practice, Dr. Amit Kumar is one of the most respected dental surgeons in Motihari and East Champaran district. He specializes in single-visit root canal treatments, diode laser dentistry, cosmetic smile makeovers, and clear aligners.
+            </p>
+            <p class="bio">
+              Known for his gentle touch and transparent consultation, patients trust him for honest recommendations and completely pain-free procedures.
+            </p>
+            <div class="doctor-qualifications">
+              <span><i class="fas fa-graduation-cap"></i> BDS Degree</span>
+              <span><i class="fas fa-certificate"></i> 13+ Years Experience</span>
+              <span><i class="fas fa-award"></i> 5,000+ Treatments</span>
+              <span><i class="fas fa-heart"></i> Painless Specialist</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== SERVICES VIEW ==================== -->
+  <div id="page-services" class="page-view">
+    <div class="page-header services-hero services-hero-preview">
+      <div class="container">
+        <div class="page-header-badge">
+          <span class="badge-dot"></span>
+          <span>Comprehensive Dental Treatments â€¢ Motihari</span>
+        </div>
+        <h1>World-Class Dental Care & Services</h1>
+        <p>From painless single-sitting Root Canals to Invisible Clear Aligners and Titanium Dental Implants. Led by Dr. Amit Kumar (BDS) with 13+ years of clinical excellence.</p>
+        <div class="breadcrumb">
+          <a href="javascript:void(0)" onclick="navigateTo('home')">Home</a>
+          <span>/</span>
+          <span>Services</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN SERVICES GRID WITH FILTER TABS -->
+    <section class="section ref-services-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="ref-kicker">OUR SPECIALITIES</span>
+          <h2 class="ref-section-headline">
+            A Wide Range of Treatments <br />
+            <span class="text-highlight">Tailored For Your Smile</span>
+          </h2>
+          <p class="section-desc">
+            Select a category below to explore our specialized treatments conducted with computerized rotary technology and hospital-grade sterilization.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="services-filter-tabs">
+          <button type="button" class="filter-tab-btn active" onclick="filterServices('all', this)">All Services</button>
+          <button type="button" class="filter-tab-btn" onclick="filterServices('restorative', this)">Root Canal & Restorations</button>
+          <button type="button" class="filter-tab-btn" onclick="filterServices('cosmetic', this)">Aligners & Smile Design</button>
+          <button type="button" class="filter-tab-btn" onclick="filterServices('surgical', this)">Implants & Laser Care</button>
+          <button type="button" class="filter-tab-btn" onclick="filterServices('general', this)">General & Diagnostics</button>
+        </div>
+
+        <div class="ref-services-grid" id="servicesGrid">
+          <!-- Card 1: RCT -->
+          <div class="ref-service-card" data-category="restorative">
+            <div class="card-image-box">
+              <img src="public/images/root-canal.jpg" alt="Root Canal Treatment" />
+              <span class="service-card-tag">Single Sitting â€¢ Painless</span>
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-tooth"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Root Canal Treatment (RCT)</h3>
+              <p class="card-desc">Painless single-sitting rotary endodontics using German apex locators. Save your infected natural tooth with 100% sterile precision.</p>
+              <div class="card-feature-list">
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Painless digital anesthesia</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>3D rotary canal shaping</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Same-day ceramic crown option</span></div>
+              </div>
+              <div class="card-action-row">
+                <button type="button" onclick="bookServiceOnWhatsApp('Root Canal Treatment')" class="btn-card-book">
+                  <i class="fab fa-whatsapp"></i> Book Treatment
+                </button>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="card-learn-more">
+                  <span>Details</span> <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Laser -->
+          <div class="ref-service-card" data-category="surgical">
+            <div class="card-image-box">
+              <img src="public/images/laser.jpg" alt="Laser Dentistry" />
+              <span class="service-card-tag">Advanced Laser Tech</span>
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-bolt"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Laser Dentistry</h3>
+              <p class="card-desc">Minimally invasive soft-tissue diode laser therapy for bleeding gums, painless frenectomy, depigmentation, and mouth ulcer relief.</p>
+              <div class="card-feature-list">
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Zero bleeding & zero stitches</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Rapid 24-hr tissue healing</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Minimal local anesthesia needed</span></div>
+              </div>
+              <div class="card-action-row">
+                <button type="button" onclick="bookServiceOnWhatsApp('Laser Dentistry')" class="btn-card-book">
+                  <i class="fab fa-whatsapp"></i> Book Treatment
+                </button>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="card-learn-more">
+                  <span>Details</span> <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Clear Aligners -->
+          <div class="ref-service-card" data-category="cosmetic">
+            <div class="card-image-box">
+              <img src="public/images/braces.jpg" alt="Clear Aligners & Braces" />
+              <span class="service-card-tag">Invisible & Ceramic</span>
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-teeth-open"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Clear Aligners & Braces</h3>
+              <p class="card-desc">Custom-designed transparent aligners and aesthetic ceramic braces for teeth alignment without unsightly wires or dietary restrictions.</p>
+              <div class="card-feature-list">
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Completely invisible trays</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Removable for easy brushing</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Computerized digital preview</span></div>
+              </div>
+              <div class="card-action-row">
+                <button type="button" onclick="bookServiceOnWhatsApp('Clear Aligners')" class="btn-card-book">
+                  <i class="fab fa-whatsapp"></i> Book Treatment
+                </button>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="card-learn-more">
+                  <span>Details</span> <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Whitening -->
+          <div class="ref-service-card" data-category="cosmetic">
+            <div class="card-image-box">
+              <img src="public/images/whitening.jpg" alt="Teeth Whitening" />
+              <span class="service-card-tag">Brighten up to 8 Shades</span>
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-smile"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Laser Teeth Whitening</h3>
+              <p class="card-desc">Professional in-office laser teeth whitening to eliminate stubborn stains from tea, coffee, smoking, or age, giving you a radiant smile.</p>
+              <div class="card-feature-list">
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Immediate 45-minute result</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Enamel-safe pH neutral formula</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Long-lasting natural luster</span></div>
+              </div>
+              <div class="card-action-row">
+                <button type="button" onclick="bookServiceOnWhatsApp('Teeth Whitening')" class="btn-card-book">
+                  <i class="fab fa-whatsapp"></i> Book Treatment
+                </button>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="card-learn-more">
+                  <span>Details</span> <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Implants -->
+          <div class="ref-service-card" data-category="surgical">
+            <div class="card-image-box">
+              <img src="public/images/implants.jpg" alt="Dental Implants" />
+              <span class="service-card-tag">Lifetime Permanent</span>
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-syringe"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Dental Implants</h3>
+              <p class="card-desc">Permanent titanium tooth roots embedded into the jawbone, topped with custom ceramic crowns that look, chew, and feel natural.</p>
+              <div class="card-feature-list">
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Preserves natural facial shape</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Restores 100% bite strength</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Lifetime durability guarantee</span></div>
+              </div>
+              <div class="card-action-row">
+                <button type="button" onclick="bookServiceOnWhatsApp('Dental Implants')" class="btn-card-book">
+                  <i class="fab fa-whatsapp"></i> Book Treatment
+                </button>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="card-learn-more">
+                  <span>Details</span> <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: General Care -->
+          <div class="ref-service-card" data-category="general">
+            <div class="card-image-box">
+              <img src="public/images/clinic.jpg" alt="General Dentistry" />
+              <span class="service-card-tag">Routine Oral Care</span>
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-tooth"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">General & Preventive Care</h3>
+              <p class="card-desc">Routine oral prophylaxis, painless ultrasonic tartar scaling, composite tooth-colored fillings, and personalized preventive care.</p>
+              <div class="card-feature-list">
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Ultrasonic stain removal</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Tooth-colored fillings</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Bad breath therapy</span></div>
+              </div>
+              <div class="card-action-row">
+                <button type="button" onclick="bookServiceOnWhatsApp('General Dentistry')" class="btn-card-book">
+                  <i class="fab fa-whatsapp"></i> Book Treatment
+                </button>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="card-learn-more">
+                  <span>Details</span> <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7: Digital RVG Diagnostics -->
+          <div class="ref-service-card" data-category="general">
+            <div class="card-image-box">
+              <img src="public/images/xray.jpg" alt="Digital Intraoral X-Ray" />
+              <span class="service-card-tag">Low-Radiation RVG</span>
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-x-ray"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Digital RVG Diagnostics</h3>
+              <p class="card-desc">Instant high-definition intraoral digital radiography offering razor-sharp diagnosis of hidden cavities with 90% less radiation.</p>
+              <div class="card-feature-list">
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Instant on-screen display</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>90% lower radiation exposure</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Micro-crack detection</span></div>
+              </div>
+              <div class="card-action-row">
+                <button type="button" onclick="bookServiceOnWhatsApp('Digital X-Ray Consultation')" class="btn-card-book">
+                  <i class="fab fa-whatsapp"></i> Book Treatment
+                </button>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="card-learn-more">
+                  <span>Details</span> <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8: Pediatric Care -->
+          <div class="ref-service-card" data-category="general">
+            <div class="card-image-box">
+              <img src="public/images/reception.jpg" alt="Pediatric Dentistry" />
+              <span class="service-card-tag">Child Friendly & Gentle</span>
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-child"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Pediatric Dentistry</h3>
+              <p class="card-desc">Warm, friendly dental care for children and teens including cavity prevention, fluoride varnish, and gentle habit counseling.</p>
+              <div class="card-feature-list">
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Fear-free relaxed atmosphere</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Fluoride enamel shielding</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Early habit guidance</span></div>
+              </div>
+              <div class="card-action-row">
+                <button type="button" onclick="bookServiceOnWhatsApp('Pediatric Dental Consultation')" class="btn-card-book">
+                  <i class="fab fa-whatsapp"></i> Book Treatment
+                </button>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="card-learn-more">
+                  <span>Details</span> <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9: Crowns & Bridges -->
+          <div class="ref-service-card" data-category="restorative">
+            <div class="card-image-box">
+              <img src="public/images/hero.jpg" alt="Crowns and Bridges" />
+              <span class="service-card-tag">Custom Prosthetics</span>
+            </div>
+            <div class="card-overlap-icon-badge"><i class="fas fa-tooth"></i></div>
+            <div class="card-body">
+              <h3 class="card-title">Crowns & Fixed Bridges</h3>
+              <p class="card-desc">High-strength Zirconia and E-max ceramic crowns, fixed dental bridges, and lightweight flexible dentures for complete chewing restoration.</p>
+              <div class="card-feature-list">
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Unbreakable monolithic zirconia</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Precise digital shade matching</span></div>
+                <div class="card-feature-item"><i class="fas fa-check-circle check-icon"></i> <span>Comfortable natural fit</span></div>
+              </div>
+              <div class="card-action-row">
+                <button type="button" onclick="bookServiceOnWhatsApp('Dental Crowns & Bridges')" class="btn-card-book">
+                  <i class="fab fa-whatsapp"></i> Book Treatment
+                </button>
+                <a href="javascript:void(0)" onclick="navigateTo('contact')" class="card-learn-more">
+                  <span>Details</span> <i class="fas fa-arrow-right arrow-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TREATMENT PROCESS 4-STEP -->
+    <section class="section treatment-process-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="ref-kicker">HOW WE CARE FOR YOU</span>
+          <h2 class="ref-section-headline">
+            Our 4-Step Seamless <br />
+            <span class="text-highlight">Treatment Experience</span>
+          </h2>
+          <p class="section-desc">Every procedure is carried out with complete transparency, safety, and zero discomfort.</p>
+        </div>
+
+        <div class="treatment-process-grid">
+          <div class="process-card">
+            <div class="process-number">01</div>
+            <h4>Digital RVG Diagnosis</h4>
+            <p>Comprehensive oral examination with low-radiation intraoral X-rays to accurately assess tooth roots and bone structure.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-number">02</div>
+            <h4>Custom Treatment Plan</h4>
+            <p>Dr. Amit Kumar (BDS) clearly explains every treatment option, expected duration, and transparent pricing beforehand.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-number">03</div>
+            <h4>Painless Gentle Procedure</h4>
+            <p>Treatment executed with computerized rotary instruments, gentle anesthesia, and strict Class-B autoclave sterilization.</p>
+          </div>
+          <div class="process-card">
+            <div class="process-number">04</div>
+            <h4>Post-Care & Follow-Up</h4>
+            <p>Detailed maintenance guidelines and follow-up checks to guarantee long-term oral health and a confident smile.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STERILE & SAFETY ASSURANCE -->
+    <section class="section sterile-assurance-section">
+      <div class="container">
+        <div class="sterile-assurance-card">
+          <div class="sterile-grid">
+            <div class="sterile-text">
+              <span class="ref-kicker" style="color: #EBF1FF;">SAFETY & HYGIENE</span>
+              <h2>100% Sterile Protocol with Class-B Autoclave</h2>
+              <p>
+                At Nirmala Dental Care, patient safety is sacred. Every instrument undergoes multi-stage ultrasonic cleaning and hospital-grade Class-B vacuum autoclave sterilization before every use, ensuring zero cross-infection risk.
+              </p>
+              <div class="sterile-points">
+                <div class="sterile-point"><i class="fas fa-shield-alt pt-icon"></i> <span>Sealed Sterilization Pouches Opened in Front of Patient</span></div>
+                <div class="sterile-point"><i class="fas fa-check-circle pt-icon"></i> <span>Disposable Gloves, Masks, Suctions & Patient Drapes</span></div>
+                <div class="sterile-point"><i class="fas fa-hospital pt-icon"></i> <span>Daily Surface Disinfection & UV Operatory Sanitization</span></div>
+              </div>
+            </div>
+            <div class="sterile-image-wrapper">
+              <img src="public/images/sterilization.jpg" alt="Class-B Autoclave Sterilization Motihari" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS -->
+    <section class="section services-faq-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="ref-kicker">QUESTIONS & ANSWERS</span>
+          <h2 class="ref-section-headline">
+            Frequently Asked <span class="text-highlight">Questions</span>
+          </h2>
+          <p class="section-desc">Everything you need to know about dental treatments, timings, and comfort at Nirmala Dental.</p>
+        </div>
+
+        <div class="faq-accordion-list">
+          <div class="faq-item" onclick="toggleFaqAccordion(this)">
+            <div class="faq-question">
+              <h4>Is Root Canal Treatment (RCT) painful at Nirmala Dental?</h4>
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>Not at all! With modern computer-controlled rotary endodontics and targeted digital local anesthesia administered by Dr. Amit Kumar, root canal therapy at our clinic is virtually painless and usually completed in a single comfortable sitting.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" onclick="toggleFaqAccordion(this)">
+            <div class="faq-question">
+              <h4>How long do dental implants last?</h4>
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>Dental implants are made of biocompatible medical-grade titanium that fuses directly with your jawbone. With regular daily brushing, flossing, and periodic check-ups, dental implants can last a lifetime.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" onclick="toggleFaqAccordion(this)">
+            <div class="faq-question">
+              <h4>Are clear aligners as effective as traditional metal braces?</h4>
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>Yes! Invisible clear aligners provide the exact same orthodontic results as metal braces for mild to complex teeth misalignment, but with the added benefits of being 100% invisible, removable during meals, and wire-free.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" onclick="toggleFaqAccordion(this)">
+            <div class="faq-question">
+              <h4>What are the clinic OPD consultation hours?</h4>
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>Nirmala Dental Care is open Monday to Saturday from 10:00 AM to 9:00 PM (Sunday Closed). You can walk in or book a prior slot via WhatsApp or phone at +91 91229 09121.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" onclick="toggleFaqAccordion(this)">
+            <div class="faq-question">
+              <h4>Where is the clinic located in Motihari?</h4>
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer" style="display: none;">
+              <p>We are situated in the heart of Motihari on Hospital Road, directly in front of Town Police Station (Thana), Agarwa, Motihari, Bihar - 845401.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="ref-cta-banner">
+      <div class="container">
+        <div class="cta-banner-card">
+          <div class="cta-text">
+            <h2>Schedule Your Dental Check-Up Today</h2>
+            <p>Experience gentle, modern dental treatments with Dr. Amit Kumar (BDS). OPD open Monâ€“Sat 10:00 AM â€“ 9:00 PM.</p>
+          </div>
+          <div class="cta-buttons">
+            <a href="https://wa.me/919122909121?text=Namaste%20Dr.%20Amit%20Kumar%2C%20I%20would%20like%20to%20consult%20regarding%20dental%20treatment." target="_blank" class="btn-cta-whatsapp">
+              <i class="fab fa-whatsapp"></i> Book via WhatsApp
+            </a>
+            <a href="tel:+919122909121" class="btn-cta-call">
+              <i class="fas fa-phone-alt"></i> +91 91229 09121
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== GALLERY VIEW ==================== -->
+  <div id="page-gallery" class="page-view">
+    <div class="page-header gallery-hero gallery-hero-preview">
+      <div class="container">
+        <div class="page-header-badge">
+          <span class="badge-dot"></span>
+          <span>Virtual Clinic Tour â€¢ Hospital Road, Motihari</span>
+        </div>
+        <h1>Our Clinic & Treatment Gallery</h1>
+        <p>Explore our state-of-the-art operatory rooms, reception lounge, digital RVG radiography, and hospital-grade autoclave sterilization units.</p>
+        <div class="breadcrumb">
+          <a href="javascript:void(0)" onclick="navigateTo('home')">Home</a>
+          <span>/</span>
+          <span>Gallery</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="public/images/reception.jpg" alt="Reception & Waiting Lounge" />
+            <div class="gallery-overlay">
+              <div>
+                <h4>Reception & Waiting Area</h4>
+                <p>Infrastructure</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="public/images/clinic.jpg" alt="Advanced Operatory Room" />
+            <div class="gallery-overlay">
+              <div>
+                <h4>Advanced Treatment Operatory</h4>
+                <p>Operatory</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="public/images/doctor.jpg" alt="Dr. Amit Kumar BDS" />
+            <div class="gallery-overlay">
+              <div>
+                <h4>Dr. Amit Kumar (BDS)</h4>
+                <p>Our Doctor</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="public/images/root-canal.jpg" alt="Root Canal Treatment" />
+            <div class="gallery-overlay">
+              <div>
+                <h4>Rotary RCT Unit</h4>
+                <p>Technology</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="public/images/laser.jpg" alt="Laser Unit" />
+            <div class="gallery-overlay">
+              <div>
+                <h4>Laser Dentistry Unit</h4>
+                <p>Technology</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="public/images/xray.jpg" alt="Digital Intraoral X-Ray" />
+            <div class="gallery-overlay">
+              <div>
+                <h4>Digital Intraoral RVG X-Ray</h4>
+                <p>Diagnostics</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="public/images/sterilization.jpg" alt="Autoclave Sterilization" />
+            <div class="gallery-overlay">
+              <div>
+                <h4>Class-B Autoclave Sterilization</h4>
+                <p>Hygiene Protocol</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="public/images/whitening.jpg" alt="Teeth Whitening" />
+            <div class="gallery-overlay">
+              <div>
+                <h4>Teeth Whitening Setup</h4>
+                <p>Cosmetic</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="public/images/braces.jpg" alt="Clear Aligners" />
+            <div class="gallery-overlay">
+              <div>
+                <h4>Clear Invisible Aligners</h4>
+                <p>Orthodontics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== CONTACT VIEW ==================== -->
+  <div id="page-contact" class="page-view">
+    <div class="page-header contact-hero contact-hero-preview">
+      <div class="container">
+        <div class="page-header-badge">
+          <span class="badge-dot"></span>
+          <span>Appointment & OPD Inquiries â€¢ Hospital Road, Motihari</span>
+        </div>
+        <h1>Get In Touch & Book Appointment</h1>
+        <p>Schedule your personalized consultation with Dr. Amit Kumar (BDS). Walk-in consultations & prior appointments available Monday through Saturday.</p>
+        <div class="breadcrumb">
+          <a href="javascript:void(0)" onclick="navigateTo('home')">Home</a>
+          <span>/</span>
+          <span>Contact Us</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emergency Callout Banner -->
+    <div class="container contact-emergency-wrapper">
+      <div class="contact-emergency-banner">
+        <div class="emergency-icon-box"><i class="fas fa-tooth"></i></div>
+        <div class="emergency-content">
+          <h4>Severe Tooth Pain or Dental Emergency?</h4>
+          <p>We prioritize acute toothaches, chipped teeth, and trauma. Call us directly for immediate triage.</p>
+        </div>
+        <a href="tel:+919122909121" class="btn-emergency-call">
+          <i class="fas fa-phone-alt"></i> Call +91 91229 09121
+        </a>
+      </div>
+    </div>
+
+    <section class="section contact-main-section">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Left Column: Details -->
+          <div class="contact-info-col">
+            <span class="ref-kicker">CONTACT INFORMATION</span>
+            <h2 class="ref-section-headline">
+              We Are Always Here <br />
+              <span class="text-highlight">For Your Smile</span>
+            </h2>
+            <p class="ref-about-text">
+              Have questions about Root Canal Therapy, Invisible Aligners, Dental Implants, or want to schedule an appointment? Choose any convenient channel below.
+            </p>
+
+            <div class="contact-cards-grid">
+              <div class="contact-card">
+                <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h4>Our Clinic Location</h4>
+                <p class="card-main-info">Hospital Road (Near Tribhuwan Janch Ghar, Gyan Babu Chowk), Agarwa, Motihari, Bihar - 845401</p>
+                <p class="card-sub-info">Near Town Thana</p>
+                <a href="https://maps.google.com/?q=Hospital+Road+Motihari+Bihar" target="_blank" class="contact-card-link">
+                  <span>View on Google Maps</span> <span class="arrow-sym">â†’</span>
+                </a>
+              </div>
+
+              <div class="contact-card">
+                <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                <h4>Call Direct Helpline</h4>
+                <p class="card-main-info">+91 91229 09121</p>
+                <p class="card-sub-info">Available Monâ€“Sat 10:00 AM â€“ 9:00 PM</p>
+                <a href="tel:+919122909121" class="contact-card-link">
+                  <span>Call Now</span> <span class="arrow-sym">â†’</span>
+                </a>
+              </div>
+
+              <div class="contact-card">
+                <div class="card-icon"><i class="fab fa-whatsapp"></i></div>
+                <h4>Instant WhatsApp Chat</h4>
+                <p class="card-main-info">+91 91229 09121</p>
+                <p class="card-sub-info">Quick appointment & report review</p>
+                <a href="https://wa.me/919122909121?text=Namaste%20Dr.%20Amit%20Kumar%2C%20I%20have%20an%20enquiry%20regarding%20dental%20treatment." target="_blank" class="contact-card-link">
+                  <span>Chat on WhatsApp</span> <span class="arrow-sym">â†’</span>
+                </a>
+              </div>
+
+              <div class="contact-card">
+                <div class="card-icon"><i class="fas fa-clock"></i></div>
+                <h4>OPD Consultation Hours</h4>
+                <p class="card-main-info">Mon - Sat: 10:00 AM â€“ 9:00 PM</p>
+                <p class="card-sub-info">Sunday: Closed (Emergency on Call)</p>
+                <span class="contact-card-link" style="color: #2E7D32;">OPD Open Today</span>
+              </div>
+            </div>
+
+            <!-- Landmark Directions Guide -->
+            <div class="landmark-guide-box">
+              <div class="landmark-header">
+                <i class="fas fa-directions landmark-icon"></i>
+                <h4>How to Reach Our Clinic in Motihari</h4>
+              </div>
+              <ul class="landmark-list">
+                <li><i class="fas fa-check-circle li-check"></i> <span><strong>Exact Landmark:</strong> Directly in front of Tribhuwan Janch Ghar, Gyan Babu Chowk, Hospital Road.</span></li>
+                <li><i class="fas fa-car li-check"></i> <span><strong>Accessibility:</strong> 5 minutes from Gandhi Chowk & Chhatauni Chowk. Ample 2-wheeler and 4-wheeler parking space.</span></li>
+                <li><i class="fas fa-hospital li-check"></i> <span><strong>Building:</strong> Modern ground-floor facility with full accessibility for senior citizens.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column: Form -->
+          <div class="contact-form-container">
+            <div class="form-header-badge">
+              <span class="badge-dot"></span>
+              <span>Instant WhatsApp Confirmation</span>
+            </div>
+            <h3>Book an Appointment</h3>
+            <p>Fill out the details below. Our team verifies your slot and sends an instant WhatsApp confirmation.</p>
+
+            <form onsubmit="handleContactSubmitAdvanced(event)" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-name">Full Name *</label>
+                  <input type="text" id="c-name" placeholder="e.g. Rahul Kumar" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="c-phone">Phone Number *</label>
+                  <input type="tel" id="c-phone" placeholder="+91 91229 09121" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-date">Preferred Date</label>
+                  <input type="date" id="c-date" />
+                </div>
+
+                <div class="form-group">
+                  <label for="c-time">Preferred Time</label>
+                  <select id="c-time">
+                    <option value="10:00 AM">10:00 AM - Morning Slot</option>
+                    <option value="11:30 AM">11:30 AM - Morning Slot</option>
+                    <option value="01:00 PM">01:00 PM - Afternoon Slot</option>
+                    <option value="04:00 PM">04:00 PM - Evening Slot</option>
+                    <option value="06:30 PM">06:30 PM - Evening Slot</option>
+                    <option value="08:00 PM">08:00 PM - Evening Slot</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="c-service">Treatment Needed</label>
+                <select id="c-service">
+                  <option value="Root Canal Treatment (RCT)">Root Canal Treatment (Painless Rotary RCT)</option>
+                  <option value="Invisible Clear Aligners">Invisible Clear Braces / Aligners</option>
+                  <option value="Dental Implants">Dental Implants (Titanium Tooth Replacement)</option>
+                  <option value="Teeth Whitening">Teeth Whitening (Laser Luster)</option>
+                  <option value="Laser Dentistry">Laser Dentistry (Gum Treatment)</option>
+                  <option value="General Check-up & Cleaning">General Check-up & Scaling</option>
+                  <option value="Pediatric Dental Care">Pediatric Dental Care (Child Dental)</option>
+                  <option value="Emergency Toothache">Severe Tooth Pain / Emergency</option>
+                  <option value="Other Consultation">Other Consultation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="c-msg">Message / Dental Concern (Optional)</label>
+                <textarea id="c-msg" rows="3" placeholder="Mention any specific symptom (e.g. sensitivity, swelling, gap in teeth)..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-contact-submit">
+                <i class="fab fa-whatsapp"></i> Book via WhatsApp
+              </button>
+
+              <p class="form-privacy-note">
+                <i class="fas fa-shield-alt"></i> Your health details are 100% confidential. No spam guaranteed.
+              </p>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Google Map Section -->
+        <div class="contact-map-wrapper">
+          <div class="map-header">
+            <div>
+              <span class="ref-kicker">INTERACTIVE LOCATION</span>
+              <h3>Find Us on Hospital Road, Motihari</h3>
+              <p>Near Tribhuwan Janch Ghar, Gyan Babu Chowk, Agarwa, Motihari, Bihar - 845401</p>
+            </div>
+            <a href="https://maps.google.com/?q=Hospital+Road+Motihari+Bihar" target="_blank" class="btn-ref-primary">
+              <i class="fas fa-directions"></i> Open Google Navigation
+            </a>
+          </div>
+
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114488.58729587455!2d84.84594248882585!3d26.649669537367375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3993348126b42b65%3A0xb36f043e0d8fa093!2sMotihari%2C%20Bihar!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              title="Nirmala Dental Motihari Location" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon"><i class="fas fa-tooth"></i></div>
+            <h3>Nirmala Dental</h3>
+          </div>
+          <p>
+            Leading dental speciality center in Motihari with 13+ years of clinical excellence. Providing gentle, painless treatments with world-class equipment and sterilization.
+          </p>
+          <div class="footer-social">
+            <a href="https://wa.me/919122909121" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="javascript:void(0)" onclick="navigateTo('home')">Home</a></li>
+            <li><a href="javascript:void(0)" onclick="navigateTo('about')">About Us</a></li>
+            <li><a href="javascript:void(0)" onclick="navigateTo('services')">Services</a></li>
+            <li><a href="javascript:void(0)" onclick="navigateTo('gallery')">Gallery</a></li>
+            <li><a href="javascript:void(0)" onclick="navigateTo('contact')">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Treatments</h4>
+          <ul>
+            <li><a href="javascript:void(0)" onclick="navigateTo('services')">Root Canal (RCT)</a></li>
+            <li><a href="javascript:void(0)" onclick="navigateTo('services')">Laser Dentistry</a></li>
+            <li><a href="javascript:void(0)" onclick="navigateTo('services')">Clear Braces</a></li>
+            <li><a href="javascript:void(0)" onclick="navigateTo('services')">Teeth Whitening</a></li>
+            <li><a href="javascript:void(0)" onclick="navigateTo('services')">Dental Implants</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i> Hospital Road, Motihari, Bihar</li>
+            <li><i class="fas fa-phone-alt" style="color: var(--primary); margin-right: 8px;"></i> +91 91229 09121</li>
+            <li><i class="fas fa-envelope" style="color: var(--primary); margin-right: 8px;"></i> nirmaladentalmotihari@gmail.com</li>
+            <li><i class="fas fa-clock" style="color: var(--primary); margin-right: 8px;"></i> Mon-Sat: 10AM â€“ 9PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nirmala Dental Care. Led by Dr. Amit Kumar (BDS). All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a 
+    href="https://wa.me/919122909121?text=Namaste%20Dr.%20Amit%20Kumar%2C%20I%20would%20like%20to%20consult%20regarding%20dental%20treatment." 
+    target="_blank" 
+    class="whatsapp-float" 
+    aria-label="WhatsApp Us"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- VIDEO / VIRTUAL TOUR MODAL -->
+  <div id="videoModal" class="ref-modal-overlay" style="display: none;" onclick="closeModal()">
+    <div class="ref-modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeModal()" aria-label="Close Tour">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="modal-header">
+        <span class="ref-kicker">CLINIC VIRTUAL TOUR</span>
+        <h3>Nirmala Dental Care</h3>
+        <p>Hospital Road (Near Tribhuwan Janch Ghar, Gyan Babu Chowk), Motihari, Bihar</p>
+      </div>
+
+      <div class="modal-media-showcase">
+        <img src="public/images/clinic.jpg" alt="Clinic Interior" class="modal-main-img" />
+        <div class="modal-media-grid">
+          <img src="public/images/reception.jpg" alt="Reception Area" />
+          <img src="public/images/xray.jpg" alt="Digital Intraoral X-Ray" />
+          <img src="public/images/sterilization.jpg" alt="Class-B Autoclave" />
+        </div>
+      </div>
+
+      <div class="modal-footer-actions">
+        <a href="https://wa.me/919122909121?text=Namaste%20Dr.%20Amit%20Kumar%2C%20I%20would%20like%20to%20visit%20the%20clinic." target="_blank" class="btn-ref-primary">
+          <i class="fab fa-whatsapp"></i> Schedule an In-Person Visit
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Navigation & Form Scripts -->
+  <script>
+    function navigateTo(pageId) {
+      document.querySelectorAll('.page-view').forEach(view => view.classList.remove('active'));
+      const target = document.getElementById('page-' + pageId);
+      if (target) {
+        target.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      document.querySelectorAll('.nav-item').forEach(link => {
+        link.classList.toggle('active', link.getAttribute('data-nav') === pageId);
+      });
+
+      document.getElementById('navLinks').classList.remove('active');
+      document.getElementById('hamburgerBtn').classList.remove('active');
+    }
+
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+      document.getElementById('hamburgerBtn').classList.toggle('active');
+    }
+
+    function openModal() {
+      document.getElementById('videoModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('videoModal').style.display = 'none';
+    }
+
+    function handleAppointmentSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('p-name').value;
+      const phone = document.getElementById('p-phone').value;
+      const date = document.getElementById('p-date').value || 'Earliest Available';
+      const time = document.getElementById('p-time').value;
+
+      const message = `Namaste Dr. Amit Kumar, I would like to book a dental appointment at Nirmala Dental Care.%0A%0A*Patient Name:* ${encodeURIComponent(name)}%0A*Phone Number:* ${encodeURIComponent(phone)}%0A*Preferred Date:* ${encodeURIComponent(date)}%0A*Preferred Time:* ${encodeURIComponent(time)}%0A%0APlease confirm my slot.`;
+      
+      window.open(`https://wa.me/919122909121?text=${message}`, '_blank');
+      
+      const toast = document.getElementById('bookingToast');
+      toast.style.display = 'flex';
+      setTimeout(() => { toast.style.display = 'none'; }, 5000);
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('c-name').value;
+      const phone = document.getElementById('c-phone').value;
+      const service = document.getElementById('c-service').value;
+      const msg = document.getElementById('c-msg').value;
+
+      const message = `Namaste Dr. Amit Kumar, I would like to book an appointment.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Treatment:* ${encodeURIComponent(service)}%0A*Message:* ${encodeURIComponent(msg || 'None')}`;
+      
+      window.open(`https://wa.me/919122909121?text=${message}`, '_blank');
+    }
+
+    function handleContactSubmitAdvanced(e) {
+      e.preventDefault();
+      const name = document.getElementById('c-name').value;
+      const phone = document.getElementById('c-phone').value;
+      const date = document.getElementById('c-date').value || 'Earliest Available';
+      const time = document.getElementById('c-time').value;
+      const service = document.getElementById('c-service').value;
+      const msg = document.getElementById('c-msg').value;
+
+      const message = `Namaste Dr. Amit Kumar, I would like to book an appointment at Nirmala Dental Care.%0A%0A*Patient Name:* ${encodeURIComponent(name)}%0A*Phone Number:* ${encodeURIComponent(phone)}%0A*Treatment Required:* ${encodeURIComponent(service)}%0A*Preferred Date:* ${encodeURIComponent(date)}%0A*Preferred Time:* ${encodeURIComponent(time)}%0A*Notes/Concern:* ${encodeURIComponent(msg || 'None')}%0A%0APlease confirm my appointment slot.`;
+      
+      window.open(`https://wa.me/919122909121?text=${message}`, '_blank');
+    }
+
+    function filterServices(category, btn) {
+      document.querySelectorAll('.filter-tab-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const cards = document.querySelectorAll('#servicesGrid .ref-service-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function bookServiceOnWhatsApp(serviceTitle) {
+      const message = `Namaste Dr. Amit Kumar, I would like to book an appointment for *${serviceTitle}* at Nirmala Dental Care.`;
+      window.open(`https://wa.me/919122909121?text=${encodeURIComponent(message)}`, '_blank');
+    }
+
+    function toggleFaqAccordion(item) {
+      const answer = item.querySelector('.faq-answer');
+      const isActive = item.classList.contains('active');
+
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('active');
+        const ans = i.querySelector('.faq-answer');
+        if (ans) ans.style.display = 'none';
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+        if (answer) answer.style.display = 'block';
+      }
+    }
+
+    // Parallax scroll effect for About collage & Hero visuals
+    (function initParallaxEffects() {
+      const box = document.getElementById('aboutCollageBox');
+      const cardLeft = document.getElementById('aboutImgLeft');
+      const cardRight = document.getElementById('aboutImgRight');
+      const innerImgLeft = cardLeft ? cardLeft.querySelector('img') : null;
+      const innerImgRight = cardRight ? cardRight.querySelector('img') : null;
+      const heroVisual = document.querySelector('.hero-reference-visual');
+
+      let ticking = false;
+
+      function updateParallax() {
+        const winHeight = window.innerHeight;
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Hero Parallax
+        if (heroVisual && scrollY < winHeight) {
+          heroVisual.style.transform = `translateY(${(scrollY * 0.12).toFixed(1)}px)`;
+        }
+
+        // About Collage Parallax
+        if (box && cardLeft && cardRight) {
+          const rect = box.getBoundingClientRect();
+          if (rect.top < winHeight && rect.bottom > 0) {
+            const progress = (winHeight - rect.top) / (winHeight + rect.height);
+            // Right image rises up first with larger travel range (+90px to -90px)
+            const yRight = (0.5 - progress) * 180;
+            // Left image follows after it with gentler travel range (+35px to -35px)
+            const yLeft = (0.5 - progress) * 70;
+
+            cardRight.style.transform = `translateY(${yRight.toFixed(1)}px)`;
+            cardLeft.style.transform = `translateY(${yLeft.toFixed(1)}px)`;
+
+            // Internal image 3D camera pan
+            if (innerImgRight) {
+              const innerYRight = (progress - 0.5) * 40;
+              innerImgRight.style.transform = `translateY(${innerYRight.toFixed(1)}px) scale(1.15)`;
+            }
+            if (innerImgLeft) {
+              const innerYLeft = (progress - 0.5) * 25;
+              innerImgLeft.style.transform = `translateY(${innerYLeft.toFixed(1)}px) scale(1.15)`;
+            }
+          }
+        }
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateParallax);
+          ticking = true;
+        }
+      }, { passive: true });
+
+      updateParallax();
+    })();
+  </script>
+</body>
+</html>
+
+
