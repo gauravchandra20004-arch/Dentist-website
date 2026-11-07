@@ -280,26 +280,44 @@ ul {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-shrink: 0;
 }
 
 .btn-nav-book {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 26px;
+  padding: 10px 24px;
   border-radius: var(--radius-full);
   background: var(--primary);
   color: var(--bg-white);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.92rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  flex-shrink: 0;
   box-shadow: var(--shadow-blue);
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .btn-nav-book:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 16px 30px rgba(30, 80, 255, 0.35);
+}
+
+@media (max-width: 1080px) and (min-width: 769px) {
+  .nav-links {
+    gap: 18px;
+  }
+  .nav-item {
+    font-size: 0.88rem;
+  }
+  .btn-nav-book {
+    padding: 8px 18px;
+    font-size: 0.86rem;
+  }
 }
 
 .mobile-only-btn {
