@@ -1,0 +1,6 @@
+feat: Add Diwali social media banner posts and interactive festive card
+
+- Added public/images/diwali_post.jpg (High-res 1080x1080 festive greeting banner)
+- Added public/images/diwali_shayari_post.jpg (Custom Hindi poetry Diwali banner for Gaurav)
+- Added public/diwali-card.html (Interactive printable/exportable Diwali greeting card)
+- Project fully synced and saved

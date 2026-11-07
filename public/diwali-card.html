@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubh Deepawali - Gaurav</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #090A0F;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 15px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #FFFFFF;
+      overflow-x: hidden;
+    }
+
+    .action-bar {
+      margin-bottom: 25px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-action {
+      background: linear-gradient(135deg, #F59E0B, #D97706);
+      color: #FFFFFF;
+      border: none;
+      padding: 12px 24px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border-radius: 30px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-action:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(245, 158, 11, 0.6);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #FFFFFF;
+      box-shadow: none;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* 1:1 SQUARE SOCIAL MEDIA POST (1080x1080 scaled) */
+    .post-canvas {
+      width: 600px;
+      height: 600px;
+      position: relative;
+      background: radial-gradient(circle at 50% 25%, #24133B 0%, #120A21 55%, #080312 100%);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 100px rgba(245, 158, 11, 0.15);
+      border: 3px solid rgba(245, 158, 11, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Elegant Golden Ornamental Frame */
+    .golden-border-inner {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      border: 1.5px solid rgba(251, 191, 36, 0.45);
+      border-radius: 20px;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .corner-ornament {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      border: 2px solid #FBBF24;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .top-left { top: 18px; left: 18px; border-right: none; border-bottom: none; }
+    .top-right { top: 18px; right: 18px; border-left: none; border-bottom: none; }
+    .bottom-left { bottom: 18px; left: 18px; border-right: none; border-top: none; }
+    .bottom-right { bottom: 18px; right: 18px; border-left: none; border-top: none; }
+
+    /* Floating Golden Bokeh / Sparkles */
+    .sparkle {
+      position: absolute;
+      color: #FBBF24;
+      pointer-events: none;
+      opacity: 0.8;
+      animation: sparkleGlow 3s ease-in-out infinite alternate;
+    }
+
+    .sp-1 { top: 12%; left: 15%; font-size: 1.2rem; animation-delay: 0.2s; }
+    .sp-2 { top: 18%; right: 18%; font-size: 1.5rem; animation-delay: 0.7s; }
+    .sp-3 { top: 45%; left: 8%; font-size: 0.9rem; animation-delay: 1.2s; }
+    .sp-4 { top: 40%; right: 10%; font-size: 1.1rem; animation-delay: 0.4s; }
+    .sp-5 { bottom: 25%; left: 14%; font-size: 1.3rem; animation-delay: 1s; }
+    .sp-6 { bottom: 22%; right: 15%; font-size: 1rem; animation-delay: 0.6s; }
+
+    @keyframes sparkleGlow {
+      0% { transform: scale(0.8) rotate(0deg); opacity: 0.4; }
+      100% { transform: scale(1.3) rotate(20deg); opacity: 1; text-shadow: 0 0 15px #FBBF24; }
+    }
+
+    /* Hanging Lights / Garlands */
+    .hanging-lamps {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      left: 10%;
+      right: 10%;
+      z-index: 1;
+    }
+
+    .lamp-string {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .string-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, rgba(251, 191, 36, 0.1), rgba(251, 191, 36, 0.7));
+    }
+
+    .lamp-bell {
+      color: #F59E0B;
+      font-size: 0.85rem;
+      filter: drop-shadow(0 0 6px #F59E0B);
+    }
+
+    /* TOP HEADER: SUB-GREETING */
+    .post-header {
+      position: relative;
+      z-index: 4;
+      margin-top: 10px;
+    }
+
+    .sub-kicker {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #FBBF24;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .sub-kicker::before,
+    .sub-kicker::after {
+      content: '';
+      width: 35px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #FBBF24);
+    }
+    .sub-kicker::after {
+      background: linear-gradient(90deg, #FBBF24, transparent);
+    }
+
+    /* MAIN TYPOGRAPHY */
+    .post-headline-hindi {
+      font-family: 'Rozha One', 'Tiro Devanagari Hindi', serif;
+      font-size: 2.7rem;
+      color: #FFFFFF;
+      line-height: 1.1;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+      background: linear-gradient(180deg, #FFFFFF 20%, #FDE68A 70%, #F59E0B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+    }
+
+    .post-headline-eng {
+      font-family: 'Cinzel', serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: 6px;
+      color: #FCD34D;
+      text-transform: uppercase;
+      margin-top: 4px;
+      text-shadow: 0 0 15px rgba(251, 191, 36, 0.5);
+    }
+
+    /* CENTER DIYA ILLUSTRATION (CSS GLOWING ARTWORK) */
+    .diya-centerpiece {
+      position: relative;
+      z-index: 4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+    }
+
+    .diya-glow-halo {
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.45) 0%, rgba(245, 158, 11, 0.15) 50%, transparent 75%);
+      filter: blur(10px);
+      animation: pulseAura 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulseAura {
+      0% { transform: scale(0.9); opacity: 0.6; }
+      100% { transform: scale(1.2); opacity: 1; }
+    }
+
+    .diya-flame-wrap {
+      position: relative;
+      width: 22px;
+      height: 38px;
+      margin-bottom: -5px;
+      z-index: 3;
+    }
+
+    .diya-flame {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, #EF4444 0%, #F59E0B 40%, #FEF08A 85%, #FFFFFF 100%);
+      border-radius: 50% 50% 35% 35% / 80% 80% 20% 20%;
+      filter: drop-shadow(0 0 12px #F59E0B) drop-shadow(0 0 25px #FBBF24);
+      animation: flickerFlame 1.2s ease-in-out infinite alternate;
+    }
+
+    @keyframes flickerFlame {
+      0% { transform: rotate(-2deg) scaleY(0.95); }
+      50% { transform: rotate(2deg) scaleY(1.05) scaleX(0.95); }
+      100% { transform: rotate(-1deg) scaleY(1); }
+    }
+
+    .diya-base {
+      position: relative;
+      width: 120px;
+      height: 34px;
+      background: linear-gradient(135deg, #B45309, #78350F);
+      border-radius: 0 0 70px 70px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), inset 0 -4px 8px rgba(0,0,0,0.5);
+      border-top: 3px solid #F59E0B;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    .diya-trim {
+      width: 80%;
+      height: 2px;
+      background: #FDE68A;
+      box-shadow: 0 0 8px #F59E0B;
+    }
+
+    .rangoli-ring {
+      position: absolute;
+      width: 210px;
+      height: 210px;
+      border: 1.5px dashed rgba(251, 191, 36, 0.4);
+      border-radius: 50%;
+      animation: rotateRangoli 25s linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes rotateRangoli {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* HEARTFELT BLESSINGS / SHAYARI */
+    .post-message {
+      position: relative;
+      z-index: 4;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #E2E8F0;
+      max-width: 520px;
+      margin: 0 auto;
+      font-weight: 500;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .shayari-box {
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px dashed rgba(251, 191, 36, 0.4);
+      border-radius: 16px;
+      padding: 12px 20px;
+      margin-bottom: 12px;
+      backdrop-filter: blur(8px);
+    }
+
+    .shayari-line {
+      font-family: 'Rozha One', 'Tiro Devanagari Hindi', serif;
+      font-size: 1.08rem;
+      color: #FEF08A;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+    }
+
+    .shayari-line.highlight {
+      color: #FBBF24;
+      font-weight: 700;
+    }
+
+    .blessing-line {
+      font-size: 0.88rem;
+      color: #CBD5E1;
+      line-height: 1.5;
+    }
+
+    .blessing-line strong {
+      color: #FDE68A;
+      font-weight: 700;
+    }
+
+    /* SENDER / SIGNATURE FOOTER */
+    .post-footer {
+      position: relative;
+      z-index: 4;
+      padding-top: 15px;
+      border-top: 1px solid rgba(245, 158, 11, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sender-box {
+      text-align: left;
+    }
+
+    .sender-kicker {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #94A3B8;
+      font-weight: 600;
+    }
+
+    .sender-name {
+      font-size: 1.5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #FFFFFF, #FDE68A, #F59E0B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 0.5px;
+      font-family: 'Cinzel', serif;
+    }
+
+    .sender-sub {
+      font-size: 0.75rem;
+      color: #38BDF8;
+      font-weight: 600;
+    }
+
+    .clinic-badge {
+      text-align: right;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 8px 16px;
+      border-radius: 40px;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      backdrop-filter: blur(8px);
+    }
+
+    .clinic-badge i {
+      color: #38BDF8;
+      font-size: 1.2rem;
+    }
+
+    .clinic-text strong {
+      display: block;
+      font-size: 0.82rem;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .clinic-text span {
+      font-size: 0.7rem;
+      color: #94A3B8;
+    }
+
+    @media (max-width: 650px) {
+      .post-canvas {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        min-height: 480px;
+        padding: 25px 20px;
+      }
+      .post-headline-hindi {
+        font-size: 2rem;
+      }
+      .post-headline-eng {
+        font-size: 0.9rem;
+        letter-spacing: 3px;
+      }
+      .post-message {
+        font-size: 0.82rem;
+      }
+      .post-footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+      .sender-box {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ACTION BUTTONS -->
+  <div class="action-bar">
+    <button class="btn-action" onclick="window.print()">
+      <i class="fas fa-print"></i> Save / Print as PDF
+    </button>
+    <a href="preview.html" class="btn-action btn-secondary">
+      <i class="fas fa-arrow-left"></i> Back to Website
+    </a>
+  </div>
+
+  <!-- SOCIAL MEDIA SQUARE POST CARD -->
+  <div class="post-canvas" id="diwaliPost">
+    <!-- Ornamental Borders -->
+    <div class="golden-border-inner"></div>
+    <div class="corner-ornament top-left"></div>
+    <div class="corner-ornament top-right"></div>
+    <div class="corner-ornament bottom-left"></div>
+    <div class="corner-ornament bottom-right"></div>
+
+    <!-- Floating Sparkles -->
+    <span class="sparkle sp-1">✦</span>
+    <span class="sparkle sp-2">✦</span>
+    <span class="sparkle sp-3">★</span>
+    <span class="sparkle sp-4">✦</span>
+    <span class="sparkle sp-5">★</span>
+    <span class="sparkle sp-6">✦</span>
+
+    <!-- Hanging Diyas & Bells -->
+    <div class="hanging-lamps">
+      <div class="lamp-string">
+        <div class="string-line"></div>
+        <i class="fas fa-bell lamp-bell"></i>
+      </div>
+      <div class="lamp-string" style="margin-top: 15px;">
+        <div class="string-line" style="height: 25px;"></div>
+        <i class="fas fa-star lamp-bell" style="font-size: 0.75rem;"></i>
+      </div>
+      <div class="lamp-string">
+        <div class="string-line"></div>
+        <i class="fas fa-bell lamp-bell"></i>
+      </div>
+    </div>
+
+    <!-- TOP HEADER -->
+    <div class="post-header">
+      <div class="sub-kicker">
+        <span>दीपोत्सव महापर्व</span>
+      </div>
+      <h1 class="post-headline-hindi">शुभ दीपावली</h1>
+      <div class="post-headline-eng">Happy Diwali</div>
+    </div>
+
+    <!-- GLOWING DIYA ARTWORK -->
+    <div class="diya-centerpiece">
+      <div class="diya-glow-halo"></div>
+      <div class="rangoli-ring"></div>
+      
+      <div class="diya-flame-wrap">
+        <div class="diya-flame"></div>
+      </div>
+      <div class="diya-base">
+        <div class="diya-trim"></div>
+      </div>
+    </div>
+
+    <!-- HEARTFELT GREETING MESSAGE WITH USER'S SHAYARI -->
+    <div class="post-message">
+      <div class="shayari-box">
+        <p class="shayari-line">🪔 दीयों की रोशनी से सब अंधेरा दूर हो जाए,</p>
+        <p class="shayari-line highlight">दुआ है कि इस दीवाली जो चाहो वो मंजूर हो जाए! ✨</p>
+      </div>
+
+      <p class="blessing-line">
+        आपको और आपके पूरे परिवार को दीपोत्सव महापर्व <strong>'दीपावली'</strong> की हार्दिक-हार्दिक शुभकामनाएं। <br>
+        प्रभु श्री राम और माता लक्ष्मी की कृपा आप पर सदा बनी रहे। 🙏💫
+      </p>
+    </div>
+
+    <!-- SIGNATURE FOOTER WITH GAURAV'S NAME -->
+    <div class="post-footer">
+      <div class="sender-box">
+        <div class="sender-kicker">सस्नेह</div>
+        <div class="sender-name">Gaurav 🪔</div>
+        <div class="sender-sub">(Nirmala Dental Care, Motihari)</div>
+      </div>
+
+      <div class="clinic-badge">
+        <i class="fas fa-tooth"></i>
+        <div class="clinic-text">
+          <strong>Nirmala Dental Care</strong>
+          <span>Hospital Road, Motihari</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
