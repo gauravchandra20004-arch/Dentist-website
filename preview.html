@@ -1542,8 +1542,88 @@
     </div>
   </div>
 
+  <!-- Floating Color Switcher (5 Curated Themes) -->
+  <div class="color-switcher-wrapper" id="colorSwitcher">
+    <button type="button" class="color-switcher-toggle" onclick="toggleColorSwitcher()" aria-label="Toggle Color Theme Switcher" title="Customize Color Theme (5 Colors)">
+      <i class="fas fa-palette"></i>
+    </button>
+
+    <div class="color-switcher-panel">
+      <div class="panel-header">
+        <div class="panel-title">
+          <i class="fas fa-palette title-icon"></i>
+          <span>Theme Colors</span>
+        </div>
+        <button type="button" class="panel-close-btn" onclick="toggleColorSwitcher()" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <p class="panel-sub">Select 1 of 5 color themes:</p>
+
+      <div class="theme-swatches-grid">
+        <button type="button" class="theme-swatch-item active" data-theme="blue" onclick="applyTheme('blue')">
+          <span class="swatch-circle" style="background-color: #1E50FF;">
+            <i class="fas fa-check swatch-check"></i>
+          </span>
+          <span class="swatch-name">Royal Blue</span>
+        </button>
+
+        <button type="button" class="theme-swatch-item" data-theme="teal" onclick="applyTheme('teal')">
+          <span class="swatch-circle" style="background-color: #0D9488;">
+            <i class="fas fa-check swatch-check" style="display: none;"></i>
+          </span>
+          <span class="swatch-name">Teal Mint</span>
+        </button>
+
+        <button type="button" class="theme-swatch-item" data-theme="cyan" onclick="applyTheme('cyan')">
+          <span class="swatch-circle" style="background-color: #0284C7;">
+            <i class="fas fa-check swatch-check" style="display: none;"></i>
+          </span>
+          <span class="swatch-name">Ocean Cyan</span>
+        </button>
+
+        <button type="button" class="theme-swatch-item" data-theme="purple" onclick="applyTheme('purple')">
+          <span class="swatch-circle" style="background-color: #7C3AED;">
+            <i class="fas fa-check swatch-check" style="display: none;"></i>
+          </span>
+          <span class="swatch-name">Deep Purple</span>
+        </button>
+
+        <button type="button" class="theme-swatch-item" data-theme="rose" onclick="applyTheme('rose')">
+          <span class="swatch-circle" style="background-color: #E11D48;">
+            <i class="fas fa-check swatch-check" style="display: none;"></i>
+          </span>
+          <span class="swatch-name">Coral Rose</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Interactive Navigation & Form Scripts -->
   <script>
+    function toggleColorSwitcher() {
+      const switcher = document.getElementById('colorSwitcher');
+      if (switcher) switcher.classList.toggle('open');
+    }
+
+    function applyTheme(themeId) {
+      document.documentElement.setAttribute('data-theme', themeId);
+      localStorage.setItem('nirmala_theme', themeId);
+
+      document.querySelectorAll('.theme-swatch-item').forEach(item => {
+        const isCurrent = item.getAttribute('data-theme') === themeId;
+        item.classList.toggle('active', isCurrent);
+        const check = item.querySelector('.swatch-check');
+        if (check) check.style.display = isCurrent ? 'inline-block' : 'none';
+      });
+    }
+
+    // Initialize saved theme on load
+    (function initSavedTheme() {
+      const saved = localStorage.getItem('nirmala_theme') || 'blue';
+      applyTheme(saved);
+    })();
     function navigateTo(pageId) {
       document.querySelectorAll('.page-view').forEach(view => view.classList.remove('active'));
       const target = document.getElementById('page-' + pageId);

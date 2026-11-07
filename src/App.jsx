@@ -10,6 +10,7 @@ import Services from './pages/Services'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import ScrollToTop from './components/ScrollToTop'
+import ColorSwitcher from './components/ColorSwitcher'
 
 function App() {
   const location = useLocation()
@@ -29,6 +30,7 @@ function App() {
       </AnimatePresence>
       <Footer />
       <WhatsAppButton />
+      <ColorSwitcher />
     </>
   )
 }
