@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, Link } from 'react-router-dom'
-import { 
-  FaTooth, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, 
-  FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube 
-} from 'react-icons/fa'
+import { FaTooth, FaBars, FaTimes } from 'react-icons/fa'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -21,41 +18,6 @@ const Navbar = () => {
 
   return (
     <header className="site-header">
-      {/* Top Royal Blue Info Bar */}
-      <div className="top-bar">
-        <div className="container top-bar-container">
-          <div className="top-bar-left">
-            <a href="tel:+919122909121" className="top-bar-item">
-              <FaPhoneAlt className="top-bar-icon" />
-              <span>+91 91229 09121</span>
-            </a>
-            <span className="top-bar-divider">•</span>
-            <a href="mailto:nirmaladentalmotihari@gmail.com" className="top-bar-item">
-              <FaEnvelope className="top-bar-icon" />
-              <span>nirmaladentalmotihari@gmail.com</span>
-            </a>
-            <span className="top-bar-divider">•</span>
-            <div className="top-bar-item top-bar-address">
-              <FaMapMarkerAlt className="top-bar-icon" />
-              <span>Hospital Road, Near Tribhuwan Janch Ghar, Motihari - 845401</span>
-            </div>
-          </div>
-
-          <div className="top-bar-right">
-            <div className="top-bar-socials">
-              <a href="https://wa.me/919122909121" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                <FaWhatsapp />
-              </a>
-              <a href="#" aria-label="Facebook"><FaFacebookF /></a>
-              <a href="https://www.instagram.com/gauravchandra20004/" target="_blank" rel="noopener noreferrer" aria-label="Gaurav Chandra Instagram">
-                <FaInstagram />
-              </a>
-              <a href="#" aria-label="YouTube"><FaYoutube /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Crisp White Navbar */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-container">
