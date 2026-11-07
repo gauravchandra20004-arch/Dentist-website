@@ -47,7 +47,9 @@ const Navbar = () => {
                 <FaWhatsapp />
               </a>
               <a href="#" aria-label="Facebook"><FaFacebookF /></a>
-              <a href="#" aria-label="Instagram"><FaInstagram /></a>
+              <a href="https://www.instagram.com/gauravchandra20004/" target="_blank" rel="noopener noreferrer" aria-label="Gaurav Chandra Instagram">
+                <FaInstagram />
+              </a>
               <a href="#" aria-label="YouTube"><FaYoutube /></a>
             </div>
           </div>
